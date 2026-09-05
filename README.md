@@ -159,8 +159,7 @@ scripts/generate_sample_data.py # creates 100 synthetic cases
 
 ## 9. Screenshots
 
-*(Add screenshots of the Dashboard, Patient Intake chat, Case History, and Analytics pages here
-before submission.)*
+(src/1.png)
 
 ## 10. Demo video
 
