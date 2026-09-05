@@ -1,0 +1,233 @@
+[
+  {
+    "rule_id": "E1",
+    "description": "Chest pain + breathing difficulty",
+    "conditions": {"all": ["chest_pain", "breathing_difficulty"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "E2",
+    "description": "Chest pain + dizziness",
+    "conditions": {"all": ["chest_pain", "dizziness"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "E3",
+    "description": "Severe breathing difficulty with low oxygen saturation (<90%)",
+    "conditions": {"all": ["breathing_difficulty_severe", "low_oxygen"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "E4",
+    "description": "Heavy/uncontrolled bleeding after injury",
+    "conditions": {"all": ["injury", "severe_bleeding"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "F1",
+    "description": "Fever > 103\u00b0F",
+    "conditions": {"all": ["fever_over_103"]},
+    "urgency": "URGENT",
+    "department": "General Medicine"
+  },
+  {
+    "rule_id": "F2",
+    "description": "Fever lasting more than 5 days",
+    "conditions": {"all": ["fever_over_5_days"]},
+    "urgency": "URGENT",
+    "department": "General Medicine"
+  },
+  {
+    "rule_id": "I1",
+    "description": "Unable to walk after injury",
+    "conditions": {"all": ["injury", "cannot_walk"]},
+    "urgency": "URGENT",
+    "department": "Orthopedics"
+  },
+  {
+    "rule_id": "I2",
+    "description": "Visible deformity or significant swelling after injury",
+    "conditions": {"all": ["injury", "deformity_or_swelling"]},
+    "urgency": "URGENT",
+    "department": "Orthopedics"
+  },
+  {
+    "rule_id": "A1",
+    "description": "Severe abdominal pain",
+    "conditions": {"all": ["abdominal_pain_severe"]},
+    "urgency": "URGENT",
+    "department": "Gastroenterology"
+  },
+  {
+    "rule_id": "A2",
+    "description": "Abdominal pain with persistent vomiting",
+    "conditions": {"all": ["abdominal_pain", "vomiting"]},
+    "urgency": "URGENT",
+    "department": "Gastroenterology"
+  },
+  {
+    "rule_id": "P1",
+    "description": "Breathing difficulty with existing asthma history",
+    "conditions": {"all": ["breathing_difficulty", "asthma_history"]},
+    "urgency": "URGENT",
+    "department": "Pulmonology"
+  },
+  {
+    "rule_id": "S1",
+    "description": "Mild fever under 3 days, no red-flag symptoms",
+    "conditions": {"all": ["fever_mild"]},
+    "urgency": "STANDARD",
+    "department": "General Medicine"
+  },
+  {
+    "rule_id": "S2",
+    "description": "Minor injury, able to walk, no bleeding or deformity",
+    "conditions": {"all": ["injury", "can_walk", "no_severe_signs"]},
+    "urgency": "STANDARD",
+    "department": "Orthopedics"
+  },
+  {
+    "rule_id": "S3",
+    "description": "Mild abdominal pain, no red-flag symptoms",
+    "conditions": {"all": ["abdominal_pain_mild"]},
+    "urgency": "STANDARD",
+    "department": "Gastroenterology"
+  },
+  {
+    "rule_id": "E5",
+    "description": "Chest pain radiating to left arm, shoulder, neck, or jaw",
+    "conditions": {"all": ["chest_pain_radiating"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "E6",
+    "description": "Abdominal pain with gastrointestinal bleeding or rigid abdomen",
+    "conditions": {"all": ["gi_bleeding"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "E7",
+    "description": "Fever with severe neurological warning signs (confusion or stiff neck)",
+    "conditions": {"all": ["fever", "neurological_signs"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "S4",
+    "description": "Mild general symptoms without red flags",
+    "conditions": {"all": ["general_symptoms_mild"]},
+    "urgency": "STANDARD",
+    "department": "General Medicine"
+  },
+  {
+    "rule_id": "E8",
+    "description": "Anaphylaxis or acute airway compromise from allergic reaction",
+    "conditions": {"all": ["anaphylaxis_signs"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "E9",
+    "description": "Acute neurological emergency (sudden thunderclap headache, stroke signs, or severe focal deficit)",
+    "conditions": {"all": ["neurological_emergency"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "E10",
+    "description": "Eye emergency (chemical burn, penetrating trauma, or sudden acute vision loss)",
+    "conditions": {"all": ["eye_emergency"]},
+    "urgency": "EMERGENCY",
+    "department": "Emergency Medicine"
+  },
+  {
+    "rule_id": "U1",
+    "description": "Allergic reaction with widespread hives or lip/facial swelling without airway closure",
+    "conditions": {"all": ["allergic_reaction_urgent"]},
+    "urgency": "URGENT",
+    "department": "Allergy & Immunology"
+  },
+  {
+    "rule_id": "U2",
+    "description": "Severe migraine or disabling headache with photophobia/nausea",
+    "conditions": {"all": ["migraine_severe"]},
+    "urgency": "URGENT",
+    "department": "Neurology"
+  },
+  {
+    "rule_id": "U3",
+    "description": "Severe burn, blistering, or rapidly spreading painful skin rash",
+    "conditions": {"all": ["severe_skin_condition"]},
+    "urgency": "URGENT",
+    "department": "Dermatology"
+  },
+  {
+    "rule_id": "U4",
+    "description": "Severe ear pain, throat swelling, or difficulty swallowing",
+    "conditions": {"all": ["ent_urgent"]},
+    "urgency": "URGENT",
+    "department": "Otolaryngology (ENT)"
+  },
+  {
+    "rule_id": "U5",
+    "description": "Severe flank pain, suspected kidney stone, or blood in urine",
+    "conditions": {"all": ["urinary_urgent"]},
+    "urgency": "URGENT",
+    "department": "Urology"
+  },
+  {
+    "rule_id": "U6",
+    "description": "Acute psychiatric crisis, severe anxiety/panic, or acute mental distress",
+    "conditions": {"all": ["psychiatric_crisis"]},
+    "urgency": "URGENT",
+    "department": "Psychiatry"
+  },
+  {
+    "rule_id": "S5",
+    "description": "Mild skin rash, localized itching, or minor superficial burn",
+    "conditions": {"all": ["mild_skin_condition"]},
+    "urgency": "STANDARD",
+    "department": "Dermatology"
+  },
+  {
+    "rule_id": "S6",
+    "description": "Mild eye irritation, redness, discharge, or conjunctivitis",
+    "conditions": {"all": ["mild_eye_condition"]},
+    "urgency": "STANDARD",
+    "department": "Ophthalmology"
+  },
+  {
+    "rule_id": "S7",
+    "description": "Mild sore throat, congestion, or mild ear discomfort",
+    "conditions": {"all": ["mild_ent_condition"]},
+    "urgency": "STANDARD",
+    "department": "Otolaryngology (ENT)"
+  },
+  {
+    "rule_id": "S8",
+    "description": "Mild urinary discomfort or frequency without fever or flank pain",
+    "conditions": {"all": ["mild_urinary_condition"]},
+    "urgency": "STANDARD",
+    "department": "Urology"
+  },
+  {
+    "rule_id": "S9",
+    "description": "Mild tension headache, steady and non-debilitating",
+    "conditions": {"all": ["mild_headache"]},
+    "urgency": "STANDARD",
+    "department": "Neurology"
+  },
+  {
+    "rule_id": "S10",
+    "description": "Mild seasonal allergic symptoms, sneezing, or watery eyes",
+    "conditions": {"all": ["mild_allergic_condition"]},
+    "urgency": "STANDARD",
+    "department": "Allergy & Immunology"
+  }
+]

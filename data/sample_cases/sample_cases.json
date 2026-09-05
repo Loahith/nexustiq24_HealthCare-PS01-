@@ -1,0 +1,2399 @@
+[
+  {
+    "case_id": "case-772b08b245",
+    "patient_id": "pat-f7f6025f60",
+    "patient_name": "Sneha Sharma",
+    "age": 40,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-1643344855",
+    "patient_id": "pat-c1329a4ed8",
+    "patient_name": "Divya Kumar",
+    "age": 18,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-610ac172da",
+    "patient_id": "pat-8534959581",
+    "patient_name": "Lakshmi Sharma",
+    "age": 8,
+    "sex": "Male",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-cfa5ef42f1",
+    "patient_id": "pat-b1ca7cbf78",
+    "patient_name": "Karthik Reddy",
+    "age": 69,
+    "sex": "Male",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-11b1b68e9d",
+    "patient_id": "pat-d40909e3e1",
+    "patient_name": "Karthik Chatterjee",
+    "age": 74,
+    "sex": "Female",
+    "messages": [
+      "I have had a fever for 6 days now.",
+      "My temperature is around 101F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F2",
+        "description": "Fever lasting more than 5 days",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-765ad5b2d1",
+    "patient_id": "pat-910fff5cfa",
+    "patient_name": "Divya Rao",
+    "age": 80,
+    "sex": "Female",
+    "messages": [
+      "I injured my ankle while playing football.",
+      "It's on my ankle.",
+      "No bleeding.",
+      "I cannot walk on it.",
+      "There is some swelling."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "I1",
+        "description": "Unable to walk after injury",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "I2",
+        "description": "Visible deformity or significant swelling after injury",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-898157e541",
+    "patient_id": "pat-d45ad79aa9",
+    "patient_name": "Aarav Kumar",
+    "age": 59,
+    "sex": "Female",
+    "messages": [
+      "I have severe abdominal pain.",
+      "It's in the lower right side.",
+      "No vomiting.",
+      "I have had it for 1 day."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A1",
+        "description": "Severe abdominal pain",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-19b655cfbe",
+    "patient_id": "pat-2061c92263",
+    "patient_name": "Arjun Kumar",
+    "age": 32,
+    "sex": "Female",
+    "messages": [
+      "I have stomach pain and I've been vomiting.",
+      "It's around my belly button.",
+      "I have had it for 2 days."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A2",
+        "description": "Abdominal pain with persistent vomiting",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-78584610b2",
+    "patient_id": "pat-c9f9d43206",
+    "patient_name": "Sneha Patel",
+    "age": 53,
+    "sex": "Male",
+    "messages": [
+      "I have breathing difficulty and I have asthma.",
+      "It's moderate severity.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Pulmonology",
+    "triggered_rules": [
+      {
+        "rule_id": "P1",
+        "description": "Breathing difficulty with existing asthma history",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-3e91a58d06",
+    "patient_id": "pat-6dd9a7151a",
+    "patient_name": "Kavya Iyer",
+    "age": 82,
+    "sex": "Female",
+    "messages": [
+      "I have had a fever for 2 days.",
+      "It's around 100F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-00170de223",
+    "patient_id": "pat-585886fcb9",
+    "patient_name": "Priya Chatterjee",
+    "age": 63,
+    "sex": "Male",
+    "messages": [
+      "I injured my wrist while playing football.",
+      "It's on my wrist.",
+      "No bleeding.",
+      "Yes I can walk fine.",
+      "No swelling."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "S2",
+        "description": "Minor injury, able to walk, no bleeding or deformity",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-8301b4918e",
+    "patient_id": "pat-6c308fd35d",
+    "patient_name": "Suresh Patel",
+    "age": 75,
+    "sex": "Female",
+    "messages": [
+      "I have mild abdominal pain.",
+      "It's in my upper stomach.",
+      "No vomiting.",
+      "It's been 1 day.",
+      "No fever."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "S3",
+        "description": "Mild abdominal pain, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-496c657302",
+    "patient_id": "pat-31b17628ad",
+    "patient_name": "Kavya Verma",
+    "age": 29,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-a7586797ae",
+    "patient_id": "pat-0e0d0c3527",
+    "patient_name": "Priya Pillai",
+    "age": 34,
+    "sex": "Female",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-3ac664f265",
+    "patient_id": "pat-398912f320",
+    "patient_name": "Rahul Reddy",
+    "age": 17,
+    "sex": "Female",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-32ad07a898",
+    "patient_id": "pat-e4a737e2d5",
+    "patient_name": "Arjun Rao",
+    "age": 51,
+    "sex": "Male",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-63addf0ac2",
+    "patient_id": "pat-be6b244b8e",
+    "patient_name": "Kavya Iyer",
+    "age": 31,
+    "sex": "Female",
+    "messages": [
+      "I have had a fever for 6 days now.",
+      "My temperature is around 101F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F2",
+        "description": "Fever lasting more than 5 days",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-1670a38ef4",
+    "patient_id": "pat-0da2fb1585",
+    "patient_name": "Rahul Verma",
+    "age": 26,
+    "sex": "Male",
+    "messages": [
+      "I injured my ankle while playing football.",
+      "It's on my ankle.",
+      "No bleeding.",
+      "I cannot walk on it.",
+      "There is some swelling."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "I1",
+        "description": "Unable to walk after injury",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "I2",
+        "description": "Visible deformity or significant swelling after injury",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-0068ccf9f5",
+    "patient_id": "pat-8056d7df6b",
+    "patient_name": "Anjali Rao",
+    "age": 53,
+    "sex": "Female",
+    "messages": [
+      "I have severe abdominal pain.",
+      "It's in the lower right side.",
+      "No vomiting.",
+      "I have had it for 1 day."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A1",
+        "description": "Severe abdominal pain",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-503cca2b29",
+    "patient_id": "pat-e8a6fce92f",
+    "patient_name": "Divya Pillai",
+    "age": 46,
+    "sex": "Male",
+    "messages": [
+      "I have stomach pain and I've been vomiting.",
+      "It's around my belly button.",
+      "I have had it for 2 days."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A2",
+        "description": "Abdominal pain with persistent vomiting",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-0eca90148d",
+    "patient_id": "pat-c644aca9e6",
+    "patient_name": "Divya Sharma",
+    "age": 45,
+    "sex": "Female",
+    "messages": [
+      "I have breathing difficulty and I have asthma.",
+      "It's moderate severity.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Pulmonology",
+    "triggered_rules": [
+      {
+        "rule_id": "P1",
+        "description": "Breathing difficulty with existing asthma history",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-bc7bc9c93b",
+    "patient_id": "pat-3f09c9e2e1",
+    "patient_name": "Arjun Patel",
+    "age": 32,
+    "sex": "Female",
+    "messages": [
+      "I have had a fever for 2 days.",
+      "It's around 100F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-821ecc9289",
+    "patient_id": "pat-636f214ba0",
+    "patient_name": "Karthik Pillai",
+    "age": 68,
+    "sex": "Female",
+    "messages": [
+      "I injured my wrist while playing football.",
+      "It's on my wrist.",
+      "No bleeding.",
+      "Yes I can walk fine.",
+      "No swelling."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "S2",
+        "description": "Minor injury, able to walk, no bleeding or deformity",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-5e5caa7f39",
+    "patient_id": "pat-4523332009",
+    "patient_name": "Sanjay Kumar",
+    "age": 38,
+    "sex": "Male",
+    "messages": [
+      "I have mild abdominal pain.",
+      "It's in my upper stomach.",
+      "No vomiting.",
+      "It's been 1 day.",
+      "No fever."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "S3",
+        "description": "Mild abdominal pain, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-b19e174e78",
+    "patient_id": "pat-aec1b8c675",
+    "patient_name": "Divya Chatterjee",
+    "age": 76,
+    "sex": "Female",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-b323042b37",
+    "patient_id": "pat-94b02bcdd1",
+    "patient_name": "Lakshmi Verma",
+    "age": 56,
+    "sex": "Female",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-8a9957783d",
+    "patient_id": "pat-1b49552b93",
+    "patient_name": "Divya Kumar",
+    "age": 70,
+    "sex": "Female",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-55dbdb54c1",
+    "patient_id": "pat-d31a467a41",
+    "patient_name": "Rahul Sharma",
+    "age": 19,
+    "sex": "Male",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-a19b98bf86",
+    "patient_id": "pat-9ce5892091",
+    "patient_name": "Anjali Pillai",
+    "age": 59,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 6 days now.",
+      "My temperature is around 101F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F2",
+        "description": "Fever lasting more than 5 days",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-85675d3a04",
+    "patient_id": "pat-313caac3f1",
+    "patient_name": "Suresh Menon",
+    "age": 81,
+    "sex": "Female",
+    "messages": [
+      "I injured my ankle while playing football.",
+      "It's on my ankle.",
+      "No bleeding.",
+      "I cannot walk on it.",
+      "There is some swelling."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "I1",
+        "description": "Unable to walk after injury",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "I2",
+        "description": "Visible deformity or significant swelling after injury",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-3b6f47f544",
+    "patient_id": "pat-54b0b45ba4",
+    "patient_name": "Arjun Gupta",
+    "age": 6,
+    "sex": "Male",
+    "messages": [
+      "I have severe abdominal pain.",
+      "It's in the lower right side.",
+      "No vomiting.",
+      "I have had it for 1 day."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A1",
+        "description": "Severe abdominal pain",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-cd4a50874c",
+    "patient_id": "pat-454483946c",
+    "patient_name": "Arjun Pillai",
+    "age": 48,
+    "sex": "Male",
+    "messages": [
+      "I have stomach pain and I've been vomiting.",
+      "It's around my belly button.",
+      "I have had it for 2 days."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A2",
+        "description": "Abdominal pain with persistent vomiting",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-2fa417121f",
+    "patient_id": "pat-43d8daca2e",
+    "patient_name": "Meera Menon",
+    "age": 25,
+    "sex": "Female",
+    "messages": [
+      "I have breathing difficulty and I have asthma.",
+      "It's moderate severity.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Pulmonology",
+    "triggered_rules": [
+      {
+        "rule_id": "P1",
+        "description": "Breathing difficulty with existing asthma history",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-bde3c6cdf8",
+    "patient_id": "pat-fee0fcd284",
+    "patient_name": "Aarav Chatterjee",
+    "age": 38,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 2 days.",
+      "It's around 100F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-03ccbeb184",
+    "patient_id": "pat-51dd81eb2a",
+    "patient_name": "Sneha Pillai",
+    "age": 43,
+    "sex": "Male",
+    "messages": [
+      "I injured my wrist while playing football.",
+      "It's on my wrist.",
+      "No bleeding.",
+      "Yes I can walk fine.",
+      "No swelling."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "S2",
+        "description": "Minor injury, able to walk, no bleeding or deformity",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-26dcecb253",
+    "patient_id": "pat-840e648a11",
+    "patient_name": "Vikram Iyer",
+    "age": 25,
+    "sex": "Male",
+    "messages": [
+      "I have mild abdominal pain.",
+      "It's in my upper stomach.",
+      "No vomiting.",
+      "It's been 1 day.",
+      "No fever."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "S3",
+        "description": "Mild abdominal pain, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-a80fc9e4a5",
+    "patient_id": "pat-32a588f72a",
+    "patient_name": "Rohan Rao",
+    "age": 7,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-5ed72f4046",
+    "patient_id": "pat-a5c8615956",
+    "patient_name": "Kavya Nair",
+    "age": 35,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-9be70338b4",
+    "patient_id": "pat-7e363d712b",
+    "patient_name": "Divya Verma",
+    "age": 15,
+    "sex": "Male",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-214b0fb022",
+    "patient_id": "pat-6a466b3cde",
+    "patient_name": "Pooja Patel",
+    "age": 73,
+    "sex": "Male",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-0ee1b9cd2b",
+    "patient_id": "pat-1ca70e452e",
+    "patient_name": "Vikram Pillai",
+    "age": 65,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 6 days now.",
+      "My temperature is around 101F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F2",
+        "description": "Fever lasting more than 5 days",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-ac2990bcc7",
+    "patient_id": "pat-b0fb7fbbda",
+    "patient_name": "Arjun Gupta",
+    "age": 82,
+    "sex": "Female",
+    "messages": [
+      "I injured my ankle while playing football.",
+      "It's on my ankle.",
+      "No bleeding.",
+      "I cannot walk on it.",
+      "There is some swelling."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "I1",
+        "description": "Unable to walk after injury",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "I2",
+        "description": "Visible deformity or significant swelling after injury",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-1d13d99deb",
+    "patient_id": "pat-3b3fb544c6",
+    "patient_name": "Karthik Gupta",
+    "age": 30,
+    "sex": "Female",
+    "messages": [
+      "I have severe abdominal pain.",
+      "It's in the lower right side.",
+      "No vomiting.",
+      "I have had it for 1 day."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A1",
+        "description": "Severe abdominal pain",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-60b1ffe5b7",
+    "patient_id": "pat-872494cb12",
+    "patient_name": "Suresh Pillai",
+    "age": 52,
+    "sex": "Female",
+    "messages": [
+      "I have stomach pain and I've been vomiting.",
+      "It's around my belly button.",
+      "I have had it for 2 days."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A2",
+        "description": "Abdominal pain with persistent vomiting",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-e475252367",
+    "patient_id": "pat-8be780e701",
+    "patient_name": "Sanjay Patel",
+    "age": 36,
+    "sex": "Male",
+    "messages": [
+      "I have breathing difficulty and I have asthma.",
+      "It's moderate severity.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Pulmonology",
+    "triggered_rules": [
+      {
+        "rule_id": "P1",
+        "description": "Breathing difficulty with existing asthma history",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-cadef69147",
+    "patient_id": "pat-0d95eb2d87",
+    "patient_name": "Rahul Iyer",
+    "age": 7,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 2 days.",
+      "It's around 100F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-638b43b6e7",
+    "patient_id": "pat-04c642db22",
+    "patient_name": "Divya Sharma",
+    "age": 14,
+    "sex": "Male",
+    "messages": [
+      "I injured my wrist while playing football.",
+      "It's on my wrist.",
+      "No bleeding.",
+      "Yes I can walk fine.",
+      "No swelling."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "S2",
+        "description": "Minor injury, able to walk, no bleeding or deformity",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-1a2b5b72f4",
+    "patient_id": "pat-37a70a72d7",
+    "patient_name": "Divya Patel",
+    "age": 9,
+    "sex": "Female",
+    "messages": [
+      "I have mild abdominal pain.",
+      "It's in my upper stomach.",
+      "No vomiting.",
+      "It's been 1 day.",
+      "No fever."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "S3",
+        "description": "Mild abdominal pain, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-f9bb14e4e0",
+    "patient_id": "pat-b051cdb0e7",
+    "patient_name": "Rahul Gupta",
+    "age": 35,
+    "sex": "Female",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-edc3262299",
+    "patient_id": "pat-e5405398a8",
+    "patient_name": "Pooja Reddy",
+    "age": 74,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-74a3982846",
+    "patient_id": "pat-0fcaba20c5",
+    "patient_name": "Pooja Reddy",
+    "age": 65,
+    "sex": "Female",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-12913fc611",
+    "patient_id": "pat-7437750b26",
+    "patient_name": "Karthik Patel",
+    "age": 17,
+    "sex": "Female",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-a485f7bd8a",
+    "patient_id": "pat-b589e51a8d",
+    "patient_name": "Kavya Menon",
+    "age": 57,
+    "sex": "Female",
+    "messages": [
+      "I have had a fever for 6 days now.",
+      "My temperature is around 101F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F2",
+        "description": "Fever lasting more than 5 days",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-54463cc09a",
+    "patient_id": "pat-8f1b10ef50",
+    "patient_name": "Priya Pillai",
+    "age": 17,
+    "sex": "Male",
+    "messages": [
+      "I injured my ankle while playing football.",
+      "It's on my ankle.",
+      "No bleeding.",
+      "I cannot walk on it.",
+      "There is some swelling."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "I1",
+        "description": "Unable to walk after injury",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "I2",
+        "description": "Visible deformity or significant swelling after injury",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-58ca1edd51",
+    "patient_id": "pat-2ff9023d8a",
+    "patient_name": "Suresh Chatterjee",
+    "age": 48,
+    "sex": "Male",
+    "messages": [
+      "I have severe abdominal pain.",
+      "It's in the lower right side.",
+      "No vomiting.",
+      "I have had it for 1 day."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A1",
+        "description": "Severe abdominal pain",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-543e4d2999",
+    "patient_id": "pat-a3961e4347",
+    "patient_name": "Divya Reddy",
+    "age": 29,
+    "sex": "Female",
+    "messages": [
+      "I have stomach pain and I've been vomiting.",
+      "It's around my belly button.",
+      "I have had it for 2 days."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A2",
+        "description": "Abdominal pain with persistent vomiting",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-646cbf54e4",
+    "patient_id": "pat-24171df799",
+    "patient_name": "Vikram Menon",
+    "age": 28,
+    "sex": "Female",
+    "messages": [
+      "I have breathing difficulty and I have asthma.",
+      "It's moderate severity.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Pulmonology",
+    "triggered_rules": [
+      {
+        "rule_id": "P1",
+        "description": "Breathing difficulty with existing asthma history",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-ccf4a22bfa",
+    "patient_id": "pat-9958512fe8",
+    "patient_name": "Sanjay Reddy",
+    "age": 14,
+    "sex": "Female",
+    "messages": [
+      "I have had a fever for 2 days.",
+      "It's around 100F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-f6d2ef02e2",
+    "patient_id": "pat-97112df4ff",
+    "patient_name": "Sneha Sharma",
+    "age": 74,
+    "sex": "Male",
+    "messages": [
+      "I injured my wrist while playing football.",
+      "It's on my wrist.",
+      "No bleeding.",
+      "Yes I can walk fine.",
+      "No swelling."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "S2",
+        "description": "Minor injury, able to walk, no bleeding or deformity",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-36186bf790",
+    "patient_id": "pat-5f6bf60321",
+    "patient_name": "Rahul Reddy",
+    "age": 26,
+    "sex": "Female",
+    "messages": [
+      "I have mild abdominal pain.",
+      "It's in my upper stomach.",
+      "No vomiting.",
+      "It's been 1 day.",
+      "No fever."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "S3",
+        "description": "Mild abdominal pain, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-328debd9c3",
+    "patient_id": "pat-16c1f8bcb8",
+    "patient_name": "Pooja Rao",
+    "age": 32,
+    "sex": "Female",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-3558fbd64c",
+    "patient_id": "pat-355b6d2f87",
+    "patient_name": "Priya Kumar",
+    "age": 53,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-be54198093",
+    "patient_id": "pat-3c8a0382ae",
+    "patient_name": "Suresh Nair",
+    "age": 63,
+    "sex": "Female",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-93a41722c2",
+    "patient_id": "pat-21b0772ec1",
+    "patient_name": "Lakshmi Chatterjee",
+    "age": 76,
+    "sex": "Female",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-054f784bd8",
+    "patient_id": "pat-c85c590c6c",
+    "patient_name": "Vikram Reddy",
+    "age": 42,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 6 days now.",
+      "My temperature is around 101F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F2",
+        "description": "Fever lasting more than 5 days",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-b4465c08d3",
+    "patient_id": "pat-0a7b3cabfc",
+    "patient_name": "Priya Verma",
+    "age": 74,
+    "sex": "Male",
+    "messages": [
+      "I injured my ankle while playing football.",
+      "It's on my ankle.",
+      "No bleeding.",
+      "I cannot walk on it.",
+      "There is some swelling."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "I1",
+        "description": "Unable to walk after injury",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "I2",
+        "description": "Visible deformity or significant swelling after injury",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-62eadeb71e",
+    "patient_id": "pat-e952ff8556",
+    "patient_name": "Rohan Sharma",
+    "age": 11,
+    "sex": "Female",
+    "messages": [
+      "I have severe abdominal pain.",
+      "It's in the lower right side.",
+      "No vomiting.",
+      "I have had it for 1 day."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A1",
+        "description": "Severe abdominal pain",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-d00fa82491",
+    "patient_id": "pat-6cf8e34874",
+    "patient_name": "Anjali Sharma",
+    "age": 70,
+    "sex": "Male",
+    "messages": [
+      "I have stomach pain and I've been vomiting.",
+      "It's around my belly button.",
+      "I have had it for 2 days."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A2",
+        "description": "Abdominal pain with persistent vomiting",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-81b714f15e",
+    "patient_id": "pat-7740e542ad",
+    "patient_name": "Anjali Patel",
+    "age": 81,
+    "sex": "Male",
+    "messages": [
+      "I have breathing difficulty and I have asthma.",
+      "It's moderate severity.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Pulmonology",
+    "triggered_rules": [
+      {
+        "rule_id": "P1",
+        "description": "Breathing difficulty with existing asthma history",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-ce95324b66",
+    "patient_id": "pat-dad536f3d7",
+    "patient_name": "Divya Menon",
+    "age": 20,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 2 days.",
+      "It's around 100F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-f8f580b4fb",
+    "patient_id": "pat-a787225ef5",
+    "patient_name": "Priya Verma",
+    "age": 15,
+    "sex": "Female",
+    "messages": [
+      "I injured my wrist while playing football.",
+      "It's on my wrist.",
+      "No bleeding.",
+      "Yes I can walk fine.",
+      "No swelling."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "S2",
+        "description": "Minor injury, able to walk, no bleeding or deformity",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-45e15937e0",
+    "patient_id": "pat-1234c4b068",
+    "patient_name": "Rohan Nair",
+    "age": 31,
+    "sex": "Female",
+    "messages": [
+      "I have mild abdominal pain.",
+      "It's in my upper stomach.",
+      "No vomiting.",
+      "It's been 1 day.",
+      "No fever."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "S3",
+        "description": "Mild abdominal pain, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-0d6d1347dd",
+    "patient_id": "pat-56d13547a8",
+    "patient_name": "Divya Nair",
+    "age": 55,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-3b35abe102",
+    "patient_id": "pat-c3a6fd3736",
+    "patient_name": "Meera Rao",
+    "age": 45,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-51b17f893b",
+    "patient_id": "pat-6a6bee1b00",
+    "patient_name": "Aarav Rao",
+    "age": 84,
+    "sex": "Male",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-b4801f3f6b",
+    "patient_id": "pat-068f1fa2b8",
+    "patient_name": "Rahul Gupta",
+    "age": 32,
+    "sex": "Female",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-d1faf424e8",
+    "patient_id": "pat-9e4f014710",
+    "patient_name": "Vikram Iyer",
+    "age": 13,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 6 days now.",
+      "My temperature is around 101F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F2",
+        "description": "Fever lasting more than 5 days",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-12668991a6",
+    "patient_id": "pat-df4f1e4bfb",
+    "patient_name": "Kavya Nair",
+    "age": 25,
+    "sex": "Female",
+    "messages": [
+      "I injured my ankle while playing football.",
+      "It's on my ankle.",
+      "No bleeding.",
+      "I cannot walk on it.",
+      "There is some swelling."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "I1",
+        "description": "Unable to walk after injury",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "I2",
+        "description": "Visible deformity or significant swelling after injury",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-b4a87d0fc1",
+    "patient_id": "pat-189dc77dbc",
+    "patient_name": "Meera Verma",
+    "age": 72,
+    "sex": "Male",
+    "messages": [
+      "I have severe abdominal pain.",
+      "It's in the lower right side.",
+      "No vomiting.",
+      "I have had it for 1 day."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A1",
+        "description": "Severe abdominal pain",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-e5bcf3748a",
+    "patient_id": "pat-5f37d7fb5c",
+    "patient_name": "Meera Pillai",
+    "age": 18,
+    "sex": "Male",
+    "messages": [
+      "I have stomach pain and I've been vomiting.",
+      "It's around my belly button.",
+      "I have had it for 2 days."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A2",
+        "description": "Abdominal pain with persistent vomiting",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-cf69f3b604",
+    "patient_id": "pat-1bffe375b8",
+    "patient_name": "Arjun Patel",
+    "age": 18,
+    "sex": "Male",
+    "messages": [
+      "I have breathing difficulty and I have asthma.",
+      "It's moderate severity.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Pulmonology",
+    "triggered_rules": [
+      {
+        "rule_id": "P1",
+        "description": "Breathing difficulty with existing asthma history",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-ef71e694d3",
+    "patient_id": "pat-d8073aab54",
+    "patient_name": "Arjun Nair",
+    "age": 82,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 2 days.",
+      "It's around 100F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-b1c95c7ad4",
+    "patient_id": "pat-28945d6dd5",
+    "patient_name": "Rohan Reddy",
+    "age": 38,
+    "sex": "Female",
+    "messages": [
+      "I injured my wrist while playing football.",
+      "It's on my wrist.",
+      "No bleeding.",
+      "Yes I can walk fine.",
+      "No swelling."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "S2",
+        "description": "Minor injury, able to walk, no bleeding or deformity",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-6c2604ecb4",
+    "patient_id": "pat-6a331c6340",
+    "patient_name": "Arjun Sharma",
+    "age": 16,
+    "sex": "Female",
+    "messages": [
+      "I have mild abdominal pain.",
+      "It's in my upper stomach.",
+      "No vomiting.",
+      "It's been 1 day.",
+      "No fever."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "S3",
+        "description": "Mild abdominal pain, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-e66dc94c4d",
+    "patient_id": "pat-0411913494",
+    "patient_name": "Arjun Sharma",
+    "age": 5,
+    "sex": "Female",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-45f4467f5b",
+    "patient_id": "pat-3b276ec912",
+    "patient_name": "Vikram Pillai",
+    "age": 38,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-0f51a048bf",
+    "patient_id": "pat-1eb7eb12cb",
+    "patient_name": "Sanjay Gupta",
+    "age": 59,
+    "sex": "Male",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-00ca1cd5a7",
+    "patient_id": "pat-798cf4867b",
+    "patient_name": "Sneha Patel",
+    "age": 24,
+    "sex": "Male",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-e90dd65837",
+    "patient_id": "pat-22977a51fa",
+    "patient_name": "Kavya Verma",
+    "age": 75,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 6 days now.",
+      "My temperature is around 101F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F2",
+        "description": "Fever lasting more than 5 days",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-75e0554539",
+    "patient_id": "pat-9b9acdb6a0",
+    "patient_name": "Lakshmi Kumar",
+    "age": 10,
+    "sex": "Female",
+    "messages": [
+      "I injured my ankle while playing football.",
+      "It's on my ankle.",
+      "No bleeding.",
+      "I cannot walk on it.",
+      "There is some swelling."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "I1",
+        "description": "Unable to walk after injury",
+        "outcome": "URGENT"
+      },
+      {
+        "rule_id": "I2",
+        "description": "Visible deformity or significant swelling after injury",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-4085011762",
+    "patient_id": "pat-e79bd7db98",
+    "patient_name": "Kavya Sharma",
+    "age": 50,
+    "sex": "Male",
+    "messages": [
+      "I have severe abdominal pain.",
+      "It's in the lower right side.",
+      "No vomiting.",
+      "I have had it for 1 day."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A1",
+        "description": "Severe abdominal pain",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-6518997ee5",
+    "patient_id": "pat-a26e3b49b1",
+    "patient_name": "Divya Pillai",
+    "age": 18,
+    "sex": "Female",
+    "messages": [
+      "I have stomach pain and I've been vomiting.",
+      "It's around my belly button.",
+      "I have had it for 2 days."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "A2",
+        "description": "Abdominal pain with persistent vomiting",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-83aca657da",
+    "patient_id": "pat-152ce3b1da",
+    "patient_name": "Lakshmi Verma",
+    "age": 24,
+    "sex": "Male",
+    "messages": [
+      "I have breathing difficulty and I have asthma.",
+      "It's moderate severity.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "Pulmonology",
+    "triggered_rules": [
+      {
+        "rule_id": "P1",
+        "description": "Breathing difficulty with existing asthma history",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-f60efb8f0c",
+    "patient_id": "pat-19909c8a1e",
+    "patient_name": "Anjali Kumar",
+    "age": 57,
+    "sex": "Male",
+    "messages": [
+      "I have had a fever for 2 days.",
+      "It's around 100F.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "S1",
+        "description": "Mild fever under 3 days, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-beab8b8a14",
+    "patient_id": "pat-9da7b8c0ad",
+    "patient_name": "Anjali Chatterjee",
+    "age": 47,
+    "sex": "Female",
+    "messages": [
+      "I injured my wrist while playing football.",
+      "It's on my wrist.",
+      "No bleeding.",
+      "Yes I can walk fine.",
+      "No swelling."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Orthopedics",
+    "triggered_rules": [
+      {
+        "rule_id": "S2",
+        "description": "Minor injury, able to walk, no bleeding or deformity",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-66783e10fb",
+    "patient_id": "pat-69c6b3ab10",
+    "patient_name": "Divya Nair",
+    "age": 25,
+    "sex": "Male",
+    "messages": [
+      "I have mild abdominal pain.",
+      "It's in my upper stomach.",
+      "No vomiting.",
+      "It's been 1 day.",
+      "No fever."
+    ],
+    "urgency_level": "STANDARD",
+    "recommended_department": "Gastroenterology",
+    "triggered_rules": [
+      {
+        "rule_id": "S3",
+        "description": "Mild abdominal pain, no red-flag symptoms",
+        "outcome": "STANDARD"
+      }
+    ],
+    "escalation_required": false
+  },
+  {
+    "case_id": "case-a1553ea10d",
+    "patient_id": "pat-8da91b66ad",
+    "patient_name": "Suresh Sharma",
+    "age": 65,
+    "sex": "Male",
+    "messages": [
+      "I have chest pain and difficulty breathing.",
+      "The pain is severe and started 1 day ago.",
+      "Yes I also feel dizzy.",
+      "No history of asthma.",
+      "Oxygen level unknown."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E1",
+        "description": "Chest pain + breathing difficulty",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-f700324757",
+    "patient_id": "pat-56da11aea2",
+    "patient_name": "Karthik Rao",
+    "age": 49,
+    "sex": "Female",
+    "messages": [
+      "I have chest pain and I feel very dizzy.",
+      "It's moderate pain, started today.",
+      "No breathing difficulty.",
+      "No asthma history."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E2",
+        "description": "Chest pain + dizziness",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-6e160a86cd",
+    "patient_id": "pat-7f58c21c8f",
+    "patient_name": "Divya Reddy",
+    "age": 8,
+    "sex": "Male",
+    "messages": [
+      "I injured my leg while playing football and there is severe bleeding.",
+      "It's on my lower leg.",
+      "I cannot walk.",
+      "There is visible deformity."
+    ],
+    "urgency_level": "EMERGENCY",
+    "recommended_department": "Emergency Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "E4",
+        "description": "Heavy/uncontrolled bleeding after injury",
+        "outcome": "EMERGENCY"
+      }
+    ],
+    "escalation_required": true
+  },
+  {
+    "case_id": "case-73878ea8ea",
+    "patient_id": "pat-b062b64477",
+    "patient_name": "Suresh Iyer",
+    "age": 40,
+    "sex": "Male",
+    "messages": [
+      "I have a fever of 104F.",
+      "It started 2 days ago.",
+      "No breathing difficulty.",
+      "No chest pain."
+    ],
+    "urgency_level": "URGENT",
+    "recommended_department": "General Medicine",
+    "triggered_rules": [
+      {
+        "rule_id": "F1",
+        "description": "Fever > 103\u00b0F",
+        "outcome": "URGENT"
+      }
+    ],
+    "escalation_required": false
+  }
+]
