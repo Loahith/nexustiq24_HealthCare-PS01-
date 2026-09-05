@@ -1,5 +1,3 @@
-<img width="1366" height="768" alt="2" src="https://github.com/user-attachments/assets/ca9c94d8-0ef3-481e-9a64-ab24f61d627f" />
-<img width="1366" height="768" alt="1" src="https://github.com/user-attachments/assets/4d40411e-824c-4ef6-8abc-2d1078f480b5" />
 # NexusTiq24 Hackathon — Problem Statement PS01: Healthcare Patient Intake Triage Assistant.
 
 ** Health Care — Patient Intake Triage Assistant**
