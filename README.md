@@ -1,3 +1,5 @@
+<img width="1366" height="768" alt="2" src="https://github.com/user-attachments/assets/ca9c94d8-0ef3-481e-9a64-ab24f61d627f" />
+<img width="1366" height="768" alt="1" src="https://github.com/user-attachments/assets/4d40411e-824c-4ef6-8abc-2d1078f480b5" />
 # NexusTiq24 Hackathon — Problem Statement PS01: Healthcare Patient Intake Triage Assistant.
 
 ** Health Care — Patient Intake Triage Assistant**
@@ -159,7 +161,11 @@ scripts/generate_sample_data.py # creates 100 synthetic cases
 
 ## 9. Screenshots
 
-(src/1.png)
+<img width="1364" height="681" alt="3" src="https://github.com/user-attachments/assets/1a419272-7866-4658-bf98-0bdc17541388" />
+<img width="1366" height="768" alt="1" src="https://github.com/user-attachments/assets/2724f4c0-ef02-4332-b11e-6dbe32aa2049" />
+<img width="1366" height="768" alt="2" src="https://github.com/user-attachments/assets/5ecd15e2-af9a-40dd-854c-4f9bc314b795" />
+
+<img width="1366" height="768" alt="4" src="https://github.com/user-attachments/assets/1bbfb6f9-b94d-4ba4-99bc-183990045168" />
 
 ## 10. Demo video
 
