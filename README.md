@@ -1,6 +1,6 @@
-# Nexus Intake — Patient Intake Triage Assistant
+#NexusTiq24 Hackathon — Problem Statement PS01: Healthcare Patient Intake Triage Assistant**.
 
-Built for **NexusTiq24 Hackathon — Problem Statement PS01: Healthcare Patient Intake Triage Assistant**.
+** Health Care — Patient Intake Triage Assistant
 
 An AI-assisted intake tool for healthcare front-desk / triage staff. It has a strict, non-negotiable
 boundary: **it never diagnoses a disease.** It only collects information, asks relevant follow-up
