@@ -164,4 +164,4 @@ before submission.)*
 
 ## 10. Demo video
 
-*(Add a link to your recorded walkthrough here before submission.)*
+https://drive.google.com/file/d/1mS9FG6OwSsFQoNqoQ3LaRJ3uOgInarcS/view?usp=sharing
